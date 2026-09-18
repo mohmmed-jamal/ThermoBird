@@ -1,0 +1,39 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# AI tools
+.ai/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python virtual env at root
+.venv/
+venv/
+
+# Python bytecode / cache (backend/.gitignore covers backend/, but _archive/
+# and any other top-level Python files need this too)
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Local dev scripts (Windows only, not needed in repo)
+start.bat
+start.sh
+complete_setup.bat
+setup_postgresql.bat
+
+# Environment files with real secrets - never commit these
+.env
+backend/.env
+frontend/.env
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Build artifacts
+BUILD_COMPLETE.md
